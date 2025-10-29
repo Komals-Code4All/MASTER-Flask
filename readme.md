@@ -14,22 +14,22 @@ Entering the URL <code>127.0.0.1:5000</code> opens the default .html webpage you
 
 ### FlaskDemo01
 
-    Build a simple 3-page website using HTML, CSS and a little Python
+Build a simple 3-page website using HTML, CSS and a little Python
 
 ### FlaskDemo02
 
-    Improve the 3-page website using Flask template layout, applied across all 3 webpages
+Improve the 3-page website using Flask template layout, applied across all 3 webpages
 
 ### FlaskDemo03 : Intermediate coding skills
 
-    Build a website that creates HTML content from JavaScript lists
+Build a website that creates HTML content from JavaScript lists
 
 ### FlaskDemo04 : Advanced coding skills
 
-    Build a website that creates HTML content from a local SQL database server
+Build a website that creates HTML content from a local SQL database server
 
 ### FlaskCodeCS50
-    Code entered following the excellent YouTube video from ***Harvard's CS50*** Lecture 9 on Flask
+Code entered following the excellent YouTube video from ***Harvard's CS50*** Lecture 9 on Flask
 
     https://www.youtube.com/live/1r-dFbPQ7Z8?si=UjdpGMEsu8JtUGuz
 
