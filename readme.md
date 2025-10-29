@@ -12,27 +12,24 @@ The Flask server is a 'web app'. It needs an initial program that will be always
 
 Entering the URL <code>127.0.0.1:5000</code> opens the default .html webpage you specify.
 
-- FlaskDemo01_1 :
+### FlaskDemo01
 
-Build a simple 3-page website using HTML, CSS and a little Python
+    Build a simple 3-page website using HTML, CSS and a little Python
 
-- FlaskDemo01_2 : Basic coding skills
+### FlaskDemo02
 
-Improve the 3-page website using a template applied across all 3 pages
+    Improve the 3-page website using Flask template layout, applied across all 3 webpages
 
-- FlaskDemo02 : Intermediate coding skills
+### FlaskDemo03 : Intermediate coding skills
 
-Build a website that creates HTML content from JavaScript lists
+    Build a website that creates HTML content from JavaScript lists
 
-- FlaskDemo03 : Advanced coding skills
+### FlaskDemo04 : Advanced coding skills
 
-Build a website that creates HTML content from a local SQL database server
+    Build a website that creates HTML content from a local SQL database server
 
-- HTML, CSS
-- Python
-  -- string manipulation
-  -- accessing SQL server
-  -- creating text files (File I/O)
-- SQL
-  -- SQL SELECT statement
-  -- a local SQL server, such as MariaDB, MySQL etc
+### FlaskCodeCS50
+    Code entered following the excellent YouTube video from ***Harvard's CS50*** Lecture 9 on Flask
+
+    https://www.youtube.com/live/1r-dFbPQ7Z8?si=UjdpGMEsu8JtUGuz
+
