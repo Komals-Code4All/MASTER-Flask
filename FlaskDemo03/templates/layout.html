@@ -8,24 +8,25 @@
 	</head>
 	<body>
 		<header>
-			<h1>About</h1>
+			<!-- Inject page's header here -->
+			{% block header %} {% endblock %}
+
+			<!-- Standard navigation for every page -->
 			<nav>
-				<a href="/">Home</a>
+				<a href="/">home</a>
 				<a href="/about">About</a>
 				<a href="/contact">Contact</a>
 			</nav>
 		</header>
 
 		<main>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-				veritatis autem molestias sapiente accusantium quaerat harum, corrupti
-				nulla ullam dolorem asperiores atque, animi earum ipsam ducimus eum
-				corporis deleniti. Debitis!
-			</p>
+			<!-- Inject page's body here  -->
+			{% block body %} {% endblock %}
 		</main>
+
+		<!-- Common footer on every page -->
 		<footer>
-			<h5>&copy Komal, 2025</h5>
+			<h5>Flask Demos - &copy Komal 2025</h5>
 		</footer>
 	</body>
 </html>
