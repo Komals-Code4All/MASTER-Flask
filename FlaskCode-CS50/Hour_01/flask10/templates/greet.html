@@ -1,0 +1,13 @@
+{% extends "layout.html" %} {% block body %}
+
+<!-- jinja : if name has a value then use it else use default text -->
+
+<h1>hello, 
+    {% if name %}
+        {{ name }} 
+    {% else %} 
+        World 
+    {% endif %}</h1>
+
+{% endblock%}
+

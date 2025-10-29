@@ -1,0 +1,26 @@
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+header {
+	background-color: darkcyan;
+}
+
+nav {
+	background-color: darkblue;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: darkblue;
+	background-color: white;
+}
+footer {
+	color: white;
+	background-color: darkcyan;
+	text-align: center;
+}
