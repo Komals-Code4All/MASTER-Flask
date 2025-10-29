@@ -40,4 +40,4 @@ Then HTML tags defined inside a block will be inserted into the corresponding em
 
 - app.py - default Flask application routing program
 
-<img src="/docs/flaskdemo01.png">
+<img src="/docs/flaskdemo02.png">
