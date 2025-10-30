@@ -1,0 +1,51 @@
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+header {
+	font-family: Impact, Haettenschweiler, "Arial Narrow ", sans-serif;
+	font-size: x-large;
+	background-color: seashell;
+}
+
+nav {
+	background-color: darkblue;
+}
+
+nav > a {
+	color: white;
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+	color: darkblue;
+	background-color: white;
+}
+footer {
+	color: white;
+	background-color: darkcyan;
+	text-align: center;
+}
+
+/* Class styling */
+
+.container {
+	display: flex;
+	background-color: whitesmoke;
+}
+
+.container div {
+	background-color: #fff5f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+}
+
+/* #login {
+	color: white;
+	background-color: black;
+} */
