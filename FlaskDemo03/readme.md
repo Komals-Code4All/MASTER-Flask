@@ -9,15 +9,15 @@ This folder shows how Python can generate webpages on the fly and these can be l
 
 From index.html the user can click a link which will
 
-1. run the getCustData.py
-1. generate file layouts/custqry.html (replacing if already there)
+1. Run the getCustData.py
+1. Generate file layouts/custqry.html (replacing if already there)
 1. Flask will then display the new custqry.html in the browser
 
 <hr>
 
 1. Open a terminal or command-line window, and navigate to this folder
-1. start Flash server using the command <code>flask run</code>
-1. open a browser with URL directing to **127.0.0.1:5000** (ip address shown in terminal window)
+1. Start Flash server using the command <code>flask run</code>
+1. Open a browser with URL directing to **127.0.0.1:5000** (or ip address as shown in terminal window)
 
 ## Folder Structure
 
@@ -27,6 +27,6 @@ From index.html the user can click a link which will
 ## Programs
 
 - app.py - default Flask application routing program
-- getCustData.py - generates a HTML page from a list (efined inside the program)
+- getCustData.py - generates a HTML page from a list (defined inside the program)
 
 <img src="/docs/flaskdemo03.png">
