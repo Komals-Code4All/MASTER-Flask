@@ -1,43 +1,34 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, session
+from flask_session import Session
 
-''' Build a simple sports club registration app '''
+# pip install flask_session
+# pip install Flask-Session
+
+
+''' Build a login session with cookies '''
 
 
 app = Flask(__name__)   # tell Flask to make this code a web application
 
-# define allowed values for server-side validation
-SPORTS = ["Basketball", "Football", "Frisbee",]
+# turn on session cookies, delete when session ends
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
 
-# creat a list to store names
-REGISTERANTS = {}   
-@app.route("/")
+
+@app.route("/", methods=["POST", "GET"])
 def index():
-    return render_template("index.html", sports=SPORTS)
+    return render_template("index.html", name=session.get("name"))
 
-@app.route("/register", methods=["POST"])
-def register():
-
-    # if not request.form.get("name") or request.form.get("sport") not in SPORTS:
-    #     return render_template("failure.html")
-
-    # get name from form, and check if entered
-    name=request.form.get("name")
-    if not name:
-        return render_template("error.html", message="Missing name")
+@app.route("/login", methods=["POST", "GET"])
+def login():
+    if request.method == "POST":
+        session["name"] = request.form.get("name")
+        return redirect("/")
+    return render_template("login.html")
 
 
-    # get sport from form, and check if entered
-    sport=request.form.get("sport")
-    if not sport:
-        return render_template("error.html", message="Missing sport")
-    if sport not in SPORTS:
-        return render_template("error.html", message="Invalid sport")
-
-
-    REGISTERANTS[name] = sport  # adding a (unique) key:value pair
-
-    return render_template("success.html")
-
-@app.route("/registrants")
-def registrants():
-    return render_template("registrants.html", registrants=REGISTERANTS)
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/")

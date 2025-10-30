@@ -1,23 +1,18 @@
-<!-- replace with RADIO buttons -->
+{% extends "layout.html" %}
 
-{% extends "layout.html" %} {% block body %}
+<!-- main body block -->
+{% block body %}
 
-<h1>Register</h1>
+<h1>Home Page</h1>
 
-<form action="/register" method="post">
-	<input
-		autocomplete="off"
-		autofocus
-		name="name"
-		placeholder="Name"
-		type="text"
-		required
-	/>
-	<!-- SPORTS is defined in app.py. Inject values using jinja -->
-	{% for sport in sports %}
-	<input name="sport" type="radio" value="{{sport}}" />{{sport}} {% endfor %}
+{% if name %}
+    <h3>You are logged in as {{ name }}</h3>
+    <a href="/logout">Log Out</a>
+{% else %}
+    <h3>You are not logged in</h3>
+    <a href="/login">Log In</a>
 
-	<button type="submit">Register</button>
-</form>
+{% endif %}
 
+<!-- end main body block -->
 {% endblock%}
