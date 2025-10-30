@@ -1,17 +1,16 @@
 # FlaskDemo03
 
-<hr>
-
-Simple website of three webpages, namely, **_Home_**, **_About_** and **_Contact_**.
-
 In this version a new Python program is introduced, **getCustData.py**.
-This folder shows how Python can generate webpages on the fly and these can be loaded by Flask.
 
-From index.html the user can click a link which will
+<img src="/docs/flaskdemo03.png">
 
-1. Run the getCustData.py
-1. Generate file layouts/custqry.html (replacing if already there)
-1. Flask will then display the new custqry.html in the browser
+This folder shows how Python can generate HTML webpages on the fly and these can be loaded by Flask.
+
+**index.html** has a link which when clicked...
+
+1. Runs getCustData.py
+1. Generates **layouts/custqry.html** (replacing if already there)
+1. Uses Flask to display the new custqry.html
 
 <hr>
 
@@ -28,5 +27,3 @@ From index.html the user can click a link which will
 
 - app.py - default Flask application routing program
 - getCustData.py - generates a HTML page from a list (defined inside the program)
-
-<img src="/docs/flaskdemo03.png">

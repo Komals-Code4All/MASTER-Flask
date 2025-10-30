@@ -1,5 +1,7 @@
 # FlaskDemo01
 
+<img src="/docs/flaskdemo01.png">
+
 Simple website of three webpages, namely, **_Home_**, **_About_** and **_Contact_**.
 
 1. Open a terminal or command-line window, and navigate to this folder
@@ -14,5 +16,3 @@ Simple website of three webpages, namely, **_Home_**, **_About_** and **_Contact
 ## Programs
 
 - app.py - default Flask application routing program
-
-<img src="/docs/flaskdemo01.png">

@@ -1,14 +1,14 @@
 # FlaskDemo02
-<hr>
 
-Simple website of three webpages, namely, **_Home_**, **_About_** and **_Contact_**.
+<img src="/docs/flaskdemo02.png">
 
-You will have noticed that the three webpages have very similar html coding. For example they have the same opening header, navigation and footer html. 
+In this example the three main html files, **_Home_**, **_About_** and **_Contact_**, make use of a Flask template for their HTML structure.
+
+You will have noticed that the three webpages have very similar html coding. For example they have the same opening header, navigation and footer html.
 
 Flask allows a special template file that can be used to define a standard layout for all webpages. This file is named **layout.html** and can be found in the **templates** folder with all the other HTML files.
 
-Within the layout.html file there are empty spaces, or **blocks** where other webpages will inseret their particualr HTML code.  
-
+Within the layout.html file there are empty spaces, or **blocks** where other webpages will inseret their particualr HTML code.
 
 A block is defined using the **jinja** syntax. The block definition must be left empty in **layout.html** file.
 
@@ -39,7 +39,3 @@ Then HTML tags defined inside a block will be inserted into the corresponding em
 ## Programs
 
 - app.py - default Flask application routing program
-
-<img src="/docs/flaskdemo02.png">
-
-  

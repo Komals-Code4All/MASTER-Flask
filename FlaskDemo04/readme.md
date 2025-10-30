@@ -1,6 +1,6 @@
 # FlaskDemo04
 
-<hr>
+<img src="/docs/flaskdemo04.png">
 
 The previous example added a webpage **custqry.html** which was built by Python program **getCustData.py**. This program used an internally defined list to produce a HTML style unordered list.
 
@@ -17,7 +17,6 @@ From index.html the user can click a link which will
 1. Generate file layouts/custqry.html (replacing if already there)
 1. Display the new custqry.html in the browser
 
-<img src="/docs/flaskdemo04-home.png">
 
 <img src="/docs/flaskdemo04-qry.png">
 
@@ -37,4 +36,3 @@ From index.html the user can click a link which will
 - app.py - default Flask application routing program
 - getCustData.py - generates a HTML page from a MySQL database table
 
-<img src="/docs/flaskdemo04.png">
